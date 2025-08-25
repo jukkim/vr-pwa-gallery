@@ -1,0 +1,139 @@
+{
+  "app": {
+    "title": "Maze Gallery",
+    "bgColor": "#111",
+    "startPosition": {
+      "x": -24,
+      "y": 1.6,
+      "z": -10
+    },
+    "movement": {
+      "speed": 0.12,
+      "accel": 40
+    }
+  },
+  "ui": {
+    "labelShowDist": 5.0,
+    "minimap": {
+      "enabled": true,
+      "scale": 3.0
+    }
+  },
+  "rooms": [
+    {
+      "id": "A",
+      "center": {
+        "x": -24,
+        "z": -10
+      },
+      "size": {
+        "w": 18,
+        "d": 12,
+        "h": 6
+      }
+    },
+    {
+      "id": "B",
+      "center": {
+        "x": 0,
+        "z": -10
+      }
+    },
+    {
+      "id": "C",
+      "center": {
+        "x": 24,
+        "z": -10
+      }
+    },
+    {
+      "id": "D",
+      "center": {
+        "x": 24,
+        "z": 10
+      }
+    }
+  ],
+  "links": [
+    {
+      "from": "A",
+      "to": "B",
+      "dir": "E",
+      "doorWidth": 3
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "dir": "E",
+      "doorWidth": 3
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "dir": "S",
+      "doorWidth": 3
+    }
+  ],
+  "audio": {
+    "bgm": "assets/audio/bgm.mp3"
+  },
+  "assets": {
+    "images": {
+      "starry": "https://upload.wikimedia.org/wikipedia/commons/c/cd/VanGogh-starry_night.jpg",
+      "lilies": "https://upload.wikimedia.org/wikipedia/commons/1/14/Claude_Monet_-_Water_Lilies_-_Google_Art_Project.jpg",
+      "seurat": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Georges_Seurat_-_A_Sunday_on_La_Grande_Jatte_--_1884_-_Google_Art_Project.jpg/1024px-Georges_Seurat_-_A_Sunday_on_La_Grande_Jatte_--_1884_-_Google_Art_Project.jpg",
+      "scream": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpg/1024px-Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpg",
+      "vgself": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg"
+    },
+    "audio": {
+      "starry": "assets/audio/starry.mp3",
+      "lilies": "assets/audio/lilies.mp3"
+    }
+  },
+  "artworks": [
+    {
+      "room": "A",
+      "wall": "N",
+      "idx": 0,
+      "img": "starry",
+      "title": "반 고흐, 별이 빛나는 밤 (1889)",
+      "audio": "starry"
+    },
+    {
+      "room": "A",
+      "wall": "S",
+      "idx": 0,
+      "img": "lilies",
+      "title": "모네, 수련",
+      "audio": "lilies"
+    },
+    {
+      "room": "B",
+      "wall": "N",
+      "idx": 0,
+      "img": "seurat",
+      "title": "쇠라, 그랑드 자트 (1884)"
+    },
+    {
+      "room": "B",
+      "wall": "E",
+      "idx": 0,
+      "img": "vgself",
+      "title": "반 고흐, 자화상"
+    },
+    {
+      "room": "C",
+      "wall": "S",
+      "idx": 0,
+      "img": "scream",
+      "title": "뭉크, 절규"
+    },
+    {
+      "room": "D",
+      "wall": "W",
+      "idx": 0,
+      "img": "lilies",
+      "title": "모네, 수련(변형)"
+    }
+  ]
+}
